@@ -33,6 +33,13 @@ const produto = sequelize.define("produto", {
             len: [1, 999999]
         }
     },
+    qtdEstoque: {
+        allowNull: false,
+        type: Sequelize.DOUBLE(),
+        validate: {
+            len: [1, 999999]
+        }
+    },
     dataVencimento: {
         allowNull: false,
         type: Sequelize.DATE()

@@ -7,6 +7,7 @@ exports.Insert = (req, res, next) => {
     const nome = req.body.nome;
     const categoria = req.body.categoria;
     const preco = req.body.preco;
+    const qtdEstoque = req.body.qtdEstoque;
     const dataVencimento = req.body.dataVencimento;
     const ativo = req.body.ativo;
  
@@ -15,6 +16,7 @@ exports.Insert = (req, res, next) => {
         nome: nome,
         categoria: categoria,
         preco: preco,
+        qtdEstoque: qtdEstoque,
         dataVencimento: dataVencimento,
         ativo: ativo,
     })
@@ -59,6 +61,7 @@ exports.Update = (req, res, next) => {
     const nome = req.body.nome;
     const categoria = req.body.categoria;
     const preco = req.body.preco;
+    const qtdEstoque = req.body.qtdEstoque;
     const dataVencimento = req.body.dataVencimento;
     const ativo = req.body.ativo;
  
@@ -69,6 +72,7 @@ exports.Update = (req, res, next) => {
                     nome: nome,
                     categoria: categoria,
                     preco: preco,
+                    qtdEstoque: qtdEstoque,
                     dataVencimento: dataVencimento,
                     ativo: ativo
                 },
